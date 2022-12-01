@@ -76,7 +76,11 @@
         font-size: 25px;
     }
     
-    
+    .galery_style img {
+        height: 1000px;
+        width: 1000px;
+        object-fit: cover;
+    }   
 }
 
 @media screen and (max-width: 600px) {
@@ -102,6 +106,7 @@
     }
 
     .carousel-item {
+        padding-top: 60px;
         height: 15vh;
         min-height: 300px;
         width: auto;
@@ -115,8 +120,8 @@
 
     .social_media img {
         width: 100%;
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 10px;
+        padding-right: 10px;
         padding-bottom: 20px;
     }
     
@@ -173,6 +178,8 @@
 
 .galery_style {
     padding-top: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .galery_style img:hover {
