@@ -1,184 +1,194 @@
+/* mapas */
+
+$font_style: (
+    $font_type_default: 'Cinzel', serif,
+    $font_type_alter: 'Cormorant', serif,
+    $color_default: whitesmoke,
+    $font_size_big: 250%,
+    $font_weight_max: bolder
+);
+
 /* variables */
 
-$font_type_default: 'Cinzel', serif;
-$font_type_alter: 'Cormorant', serif;
-$color_default: whitesmoke;
-$font_size_big: 250%;
 $max_width_or_height: 100%;
+$view: desktop;
 
-/* media query para PC */
+@if $vista == desktop {
 
-@media screen and (min-width: 601px) {
-    
-    .about {
-        h2 {
-            font-family: $font_type_default;
-            font-size: 450%;
-            font-weight: bolder;
-            color: $color_default;
-            padding-bottom: 20px;
+    /* media query para PC */
+    @media screen and (min-width: 601px) {
+        
+        .about {
+            h2 {
+                font-family: map-get($map: font_style, $key: font_type_default);
+                font-size: 450%;
+                font-weight: map-get($map: font_style, $key: $font_weight_max);
+                color: map-get($map: font_style, $key: $color_default);
+                padding-bottom: 20px;
+            }
+
+            p {
+                font-family: map-get($map: font_stlye, $key: $font_type_alter);
+                font-size: map-get($map: font_type, $key: $font_size_big);
+                font-weight: 450;
+                color: map-get($map: font_style, $key: $color_default);
+            }
+
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 100px
         }
 
+        .carousel-item {
+            height: 95vh;
+            min-height: 1000px;
+            width: auto;
+            margin: auto;
+
+            img {
+                width: $max_width_or_height;
+                height: auto;
+            }
+        }
+
+        .card-group {
+            .card-title {
+                font-family: map-get($map: font_style, $key: $font_type_default);
+                font-size: map-get($map: font_style, $key: $font_size_big);
+                font-weight: bold;
+            }
+
+            .card-text {
+                font-family: map-get($map: font_stlye, $key: $font_type_alter);
+                font-size: map-get($map: font_style, $key: $font_size_big);
+            }
+        }
+
+        .social_media {
+            img {
+                width: 50%;
+                padding-left: 60px;
+                padding-left: 60px;
+            }
+
+            padding-top: 300px;
+            padding-bottom: 100px;
+            text-align: center;
+        }
+
+        .main_title {
+            h1 {
+                font-size: 10rem;
+            }
+        }
+
+        .navbar {
+            .offcanvas-title {
+                font-size: 50px;
+            }
+
+            .nav-item {
+                font-size: 30px;
+
+                .dropdown-menu {
+                    font-size: 20px;
+                }
+            }
+
+            .btn {
+                font-size: 25px;
+            }
+        }
+        
+        .galery_style {
+            img {
+                height: 1000px;
+                width: 1000px;
+                object-fit: cover;
+            }
+        
+        }   
+    }
+} @else {
+
+    /* media query para mobile */
+    @media screen and (max-width: 600px) {
+
+        
+        .about {
+            h2 {
+                font-family: map-get($map: font_style, $key: $font_type_default);;
+                font-size: map-get($map: font_style, $key: $font_size_big);
+                font-weight: map-get($map: font_style, $key: $font_weight_max);
+                color: map-get($map: font_style, $key: $color_default);
+                padding-bottom: 20px;
+            }
+
         p {
-            font-family: $font_type_alter;
-            font-size: $font_size_big;
-            font-weight: 450;
-            color: $color_default;
+            font-family: map-get($map: font_style, $key: $font_type_default);
+            font-size: 115%;
+            color: map-get($map: font_style, $key: $color_default);
         }
 
         padding-left: 50px;
         padding-right: 50px;
         padding-top: 100px
-    }
-
-    .carousel-item {
-        height: 95vh;
-        min-height: 1000px;
-        width: auto;
-        margin: auto;
-
-        img {
-            width: $max_width_or_height;
-            height: auto;
-        }
-    }
-
-    .card-group {
-        .card-title {
-            font-family: $font_type_default;
-            font-size: $font_size_big;
-            font-weight: bold;
         }
 
-        .card-text {
-            font-family: $font_type_alter;
-            font-size: $font_size_big;
-        }
-    }
+        .carousel-item {
+            padding-top: 60px;
+            height: 15vh;
+            min-height: 300px;
+            width: auto;
+            margin: auto;
 
-    .social_media {
-        img {
-            width: 50%;
-            padding-left: 60px;
-            padding-left: 60px;
-        }
-
-        padding-top: 300px;
-        padding-bottom: 100px;
-        text-align: center;
-    }
-
-    .main_title {
-        h1 {
-            font-size: 10rem;
-        }
-    }
-
-    .navbar {
-        .offcanvas-title {
-            font-size: 50px;
-        }
-
-        .nav-item {
-            font-size: 30px;
-
-            .dropdown-menu {
-                font-size: 20px;
+            img {
+                width: $max_width_or_height;
+                height: auto;
             }
         }
 
-        .btn {
-            font-size: 25px;
-        }
-    }
-    
-    .galery_style {
-        img {
-            height: 1000px;
-            width: 1000px;
-            object-fit: cover;
-        }
-       
-    }   
-}
+        .social_media {
+            img {
+                width: $max_width_or_height;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 20px;
+            }
 
-/* media query para mobile */
-
-@media screen and (max-width: 600px) {
-
-    
-    .about {
-        h2 {
-            font-family: $font_type_default;
-            font-size: $font_size_big;
-            font-weight: bolder;
-            color: $color_default;
-            padding-bottom: 20px;
+            padding-top: 50px;
+            padding-bottom: 100px;
+            text-align: center;
         }
 
-       p {
-        font-family: $font_type_default;
-        font-size: 115%;
-        color: whitesmoke;
-       }
-
-       padding-left: 50px;
-       padding-right: 50px;
-       padding-top: 100px
-    }
-
-    .carousel-item {
-        padding-top: 60px;
-        height: 15vh;
-        min-height: 300px;
-        width: auto;
-        margin: auto;
-
-        img {
-            width: $max_width_or_height;
-            height: auto;
+        .main_title {
+            h1 {
+                font-size: 5rem;
+            }
         }
-    }
+        
+        .navbar {
+            .offcanvas-title {
+                font-size: 30px;
+            }
 
-    .social_media {
-        img {
-            width: $max_width_or_height;
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-bottom: 20px;
-        }
+            .nav-item {
+                font-size: 15px;
 
-        padding-top: 50px;
-        padding-bottom: 100px;
-        text-align: center;
-    }
+                .dropdown-menu {
+                    font-size: 10px;
+                }
+            }
 
-    .main_title {
-        h1 {
-            font-size: 5rem;
-        }
-    }
-    
-    .navbar {
-        .offcanvas-title {
-            font-size: 30px;
-        }
-
-        .nav-item {
-            font-size: 15px;
-
-            .dropdown-menu {
+            .btn {
                 font-size: 10px;
             }
         }
+        
 
-        .btn {
-            font-size: 10px;
-        }
     }
-    
-
 }
+
 
 /* cards */
 
@@ -191,7 +201,7 @@ $max_width_or_height: 100%;
     margin: auto;
 
     btn {
-        font-family: $font_type_alter;
+        font-family: map-get($map: font_style, $key: $font_type_alter);
         font-size: x-large;
         font-weight: bold;
     }
@@ -222,7 +232,7 @@ $max_width_or_height: 100%;
 /* titulo principal */
 
 .main_title {
-    font-family: $font_type_default;
+    font-family: map-get($map: font_style, $key: $font_type_default);
     font-weight: bold;
     text-align: center;
     text-shadow: black -1px 1px, black -2px 2px, black -3px 3px, black -4px 4px, black -5px 5px;
@@ -232,62 +242,52 @@ $max_width_or_height: 100%;
 
 /* background */
 
+@mixin background($url, $repeat, $size, $color, $attach) {
+    background-image: url($url);
+    background-repeat: $repeat;
+    background-size: $size;
+    background-color: $color;
+    background-attachment: $attach;
+}
+
 .homeBackground{
-    background-image: url(../images/premium-fondo-degradado-negro-simple_552255-583.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: black;
-    background-attachment: fixed;
+    @include background('../images/premium-fondo-degradado-negro-simple_552255-583.webp', no-repeat, cover, black, fixed)
 }
 
 .galeryBackground{
-    background-image: url(../images/black-stone-texture-dark-slate-background-top-view_88281-1206.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: black;
-    background-attachment: fixed;
+    @include background('../images/black-stone-texture-dark-slate-background-top-view_88281-1206.webp', no-repeat, cover, black, fixed)
 }
 
 .houseBackground{
-    background-image: url(../images/122983.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: black;
-    background-attachment: fixed;
+    @include background('../images/122983.jpg', no-repeat, cover, black, fixed)
+
 }
 
 .merchBackground {
-    background-image: url(../images/Game_of_Thrones_Closeup_Swords_Throne_582493_1280x854.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: black;
-    background-attachment: fixed;
+    @include background('../images/Game_of_Thrones_Closeup_Swords_Throne_582493_1280x854.jpg', no-repeat, cover, black, fixed)
 }
 
 .booksBackground {
-    background-image: url(../images/Game-of-Thrones-emblema.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: black;
-    background-attachment: fixed;
+    @include background('../images/Game-of-Thrones-emblema.jpg', no-repeat, cover, black, fixed)
+
 }
 
 /* navbar */
 
 .navbar {
     .offcanvas-title {
-        font-family: $font_type_default;
-        color: $color_default;
+        font-family: map-get($map: font_style, $key: $font_type_default);
+        color: map-get($map: font_style, $key: $color_default);
         font-weight: bold;
     }
 
     .nav-item {
-        font-family: $font_type_default;
-        color: $color_default;
+        font-family: map-get($map: font_style, $key: $font_type_default);
+        color: map-get($map: font_style, $key: $color_default);
     }
 
     .btn {
-        font-family: $font_type_default;
+        font-family: map-get($map: font_style, $key: $font_type_default);
     }
 }
 
