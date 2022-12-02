@@ -1,0 +1,226 @@
+/* variables */
+/* media query para PC */
+@media screen and (min-width: 601px) {
+  .about h2 {
+    font-family: "Cinzel", serif;
+    font-size: 450%;
+    font-weight: bolder;
+    color: whitesmoke;
+    padding-bottom: 20px;
+  }
+  .about p {
+    font-family: "Cormorant", serif;
+    font-size: 250%;
+    font-weight: 450;
+    color: whitesmoke;
+  }
+  .about {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 100px;
+  }
+  .carousel-item {
+    height: 95vh;
+    min-height: 1000px;
+    width: auto;
+    margin: auto;
+  }
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+  .card-group .card-title {
+    font-family: "Cinzel", serif;
+    font-size: 250%;
+    font-weight: bold;
+  }
+  .card-group .card-text {
+    font-family: "Cormorant", serif;
+    font-size: 250%;
+  }
+  .social_media img {
+    width: 50%;
+    padding-left: 60px;
+    padding-left: 60px;
+  }
+  .social_media {
+    padding-top: 300px;
+    padding-bottom: 100px;
+    text-align: center;
+  }
+  .main_title h1 {
+    font-size: 10rem;
+  }
+  .navbar .offcanvas-title {
+    font-size: 50px;
+  }
+  .navbar .nav_item {
+    font-size: 30px;
+  }
+  .navbar .nav-item .dropdown-menu {
+    font-size: 20px;
+  }
+  .navbar .btn {
+    font-size: 25px;
+  }
+  .galery_style img {
+    height: 1000px;
+    width: 1000px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+/* media query para mobile */
+@media screen and (max-width: 600px) {
+  .about h2 {
+    font-family: "Cinzel", serif;
+    font-size: 250%;
+    font-weight: bolder;
+    color: whitesmoke;
+    padding-bottom: 20px;
+  }
+  .about p {
+    font-family: "Cinzel", serif;
+    font-size: 115%;
+    color: whitesmoke;
+  }
+  .about {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 100px;
+  }
+  .carousel-item {
+    padding-top: 60px;
+    height: 15vh;
+    min-height: 300px;
+    width: auto;
+    margin: auto;
+  }
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+  .social_media img {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+  }
+  .social_media {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+  }
+  .main_title h1 {
+    font-size: 5rem;
+  }
+  .navbar .offcanvas-titlec {
+    font-size: 30px;
+  }
+  .navbar .nav-item {
+    font-size: 15px;
+  }
+  .navbar .nav-item .dropdown-menu {
+    font-size: 10px;
+  }
+  .navbar .btn {
+    font-size: 10px;
+  }
+}
+/* cards */
+.card-group {
+  padding-top: 200px;
+  /*     padding-bottom: 300px; */
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+}
+
+.card-group btn {
+  font-family: "Cormorant", serif;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.card-group .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 30px -10px grey;
+}
+
+/* galery */
+.galery_style {
+  padding-top: 200px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.galery_style img:hover {
+  transform: translateY(-20px);
+}
+
+/* titulo principal */
+.main_title {
+  font-family: "Cinzel", serif;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: black -1px 1px, black -2px 2px, black -3px 3px, black -4px 4px, black -5px 5px;
+  color: whitesmoke;
+  padding-top: 200px;
+}
+
+/* background */
+.homeBackground {
+  background-image: url(../images/premium-fondo-degradado-negro-simple_552255-583.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  background-attachment: fixed;
+}
+
+.galeryBackground {
+  background-image: url(../images/black-stone-texture-dark-slate-background-top-view_88281-1206.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  background-attachment: fixed;
+}
+
+.houseBackground {
+  background-image: url(../images/122983.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  background-attachment: fixed;
+}
+
+.merchBackground {
+  background-image: url(../images/Game_of_Thrones_Closeup_Swords_Throne_582493_1280x854.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  background-attachment: fixed;
+}
+
+.booksBackground {
+  background-image: url(../images/Game-of-Thrones-emblema.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  background-attachment: fixed;
+}
+
+/* navbar */
+.navbar .offcanvas-title {
+  font-family: "Cinzel", serif;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.navbar .nav-item {
+  font-family: "Cinzel", serif;
+  color: whitesmoke;
+}
+
+.navbar .btn {
+  font-family: "Cinzel", serif;
+}/*# sourceMappingURL=main.css.map */
