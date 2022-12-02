@@ -216,28 +216,26 @@ $max_width_or_height: 100%;
 /* cards */
 
 .card-group {
+
     padding-top: 200px;
 /*     padding-bottom: 300px; */
     padding-left: 50px;
     padding-right: 50px;
     margin: auto;
-}
 
-.card-group {
     btn {
         font-family: $font_type_alter;
         font-size: x-large;
         font-weight: bold;
     }
-}
 
-.card-group {
     .card {
         &:hover {
             transform: translateY(-15px);
             box-shadow: 30px -10px grey;
         }
     }
+    
 }
 
 /* galery */
@@ -246,9 +244,7 @@ $max_width_or_height: 100%;
     padding-top: 200px;
     padding-left: 10px;
     padding-right: 10px;
-}
 
-.galery_style {
     img {
         &:hover {
             transform: translateY(-20px);   

@@ -135,13 +135,11 @@
   padding-right: 50px;
   margin: auto;
 }
-
 .card-group btn {
   font-family: "Cormorant", serif;
   font-size: x-large;
   font-weight: bold;
 }
-
 .card-group .card:hover {
   transform: translateY(-15px);
   box-shadow: 30px -10px grey;
@@ -153,7 +151,6 @@
   padding-left: 10px;
   padding-right: 10px;
 }
-
 .galery_style img:hover {
   transform: translateY(-20px);
 }
