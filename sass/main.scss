@@ -9,7 +9,7 @@ $max_width_or_height: 100%;
 /* media query para PC */
 
 @media screen and (min-width: 601px) {
-
+    
     .about {
         h2 {
             font-family: $font_type_default;
@@ -18,18 +18,14 @@ $max_width_or_height: 100%;
             color: $color_default;
             padding-bottom: 20px;
         }
-    }
-    
-    .about {
+
         p {
             font-family: $font_type_alter;
             font-size: $font_size_big;
             font-weight: 450;
             color: $color_default;
         }
-    }
-    
-    .about {
+
         padding-left: 50px;
         padding-right: 50px;
         padding-top: 100px
@@ -40,9 +36,7 @@ $max_width_or_height: 100%;
         min-height: 1000px;
         width: auto;
         margin: auto;
-    }
-    
-    .carousel-item {
+
         img {
             width: $max_width_or_height;
             height: auto;
@@ -55,9 +49,7 @@ $max_width_or_height: 100%;
             font-size: $font_size_big;
             font-weight: bold;
         }
-    }
 
-    .card-group {
         .card-text {
             font-family: $font_type_alter;
             font-size: $font_size_big;
@@ -70,9 +62,7 @@ $max_width_or_height: 100%;
             padding-left: 60px;
             padding-left: 60px;
         }
-    }
-    
-    .social_media {
+
         padding-top: 300px;
         padding-bottom: 100px;
         text-align: center;
@@ -87,28 +77,25 @@ $max_width_or_height: 100%;
     .navbar {
         .offcanvas-title {
             font-size: 50px;
+            font-weight: bold;
         }
-    }
-    
-    .navbar {
+
         .nav_item {
             font-size: 30px;
-        }
-    }
-    
-    .navbar {
-        .nav-item {
+
             .dropdown-menu {
                 font-size: 20px;
             }
         }
-    }
 
-    .navbar {
         .btn {
-            font-size: 25px;
+            font-size: 15px;
         }
+
+        font-family: $font_type_default;
+        color: $color_default;
     }
+    
     
     .galery_style {
         img {
@@ -124,28 +111,25 @@ $max_width_or_height: 100%;
 
 @media screen and (max-width: 600px) {
 
-    .about {
-       h2 {
-        font-family: $font_type_default;
-        font-size: $font_size_big;
-        font-weight: bolder;
-        color: $color_default;
-        padding-bottom: 20px;
-       }
-    }
     
     .about {
+        h2 {
+            font-family: $font_type_default;
+            font-size: $font_size_big;
+            font-weight: bolder;
+            color: $color_default;
+            padding-bottom: 20px;
+        }
+
        p {
         font-family: $font_type_default;
         font-size: 115%;
         color: whitesmoke;
        }
-    }
-    
-    .about {
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-top: 100px
+
+       padding-left: 50px;
+       padding-right: 50px;
+       padding-top: 100px
     }
 
     .carousel-item {
@@ -154,9 +138,7 @@ $max_width_or_height: 100%;
         min-height: 300px;
         width: auto;
         margin: auto;
-    }
-    
-    .carousel-item {
+
         img {
             width: $max_width_or_height;
             height: auto;
@@ -170,9 +152,7 @@ $max_width_or_height: 100%;
             padding-right: 10px;
             padding-bottom: 20px;
         }
-    }
-    
-    .social_media {
+
         padding-top: 50px;
         padding-bottom: 100px;
         text-align: center;
@@ -188,27 +168,19 @@ $max_width_or_height: 100%;
         .offcanvas-titlec {
             font-size: 30px;
         }
-        
-    }
-    
-    .navbar {
+
         .nav-item {
             font-size: 15px;
-        }
-    }
-    
-    .navbar {
-        .nav-item {
+
             .dropdown-menu {
                 font-size: 10px;
             }
         }
-    }
-    
-    .navbar {
+
         .btn {
-            font-size: 10px;
+            font-size: 8px;
         }
+        
     }
 
 }
@@ -305,25 +277,3 @@ $max_width_or_height: 100%;
     background-attachment: fixed;
 }
 
-/* navbar */
-
-.navbar {
-    .offcanvas-title {
-        font-family: $font_type_default;
-        color: $color_default;
-        font-weight: bold;
-    }
-}
-
-.navbar {
-    .nav-item {
-        font-family: $font_type_default;
-        color: $color_default;
-    }
-}
-
-.navbar {
-    .btn {
-        font-family: $font_type_default;
-    }
-}
