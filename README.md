@@ -1,2 +1,5 @@
 # Proyecto Web
-Entrega 2 del proyecto para el curso de Desarrollo Web
+Preentrega 3 del proyecto para el curso de Desarrollo Web.
+
+## Alumna
+Belen Ortiz
