@@ -1,4 +1,4 @@
-/* mapas */
+/* mapas para estilos de fuente*/
 
 $font_style: (
     $font_type_default: 'Cinzel', serif,
@@ -240,7 +240,7 @@ $view: desktop;
     padding-top: 200px;
 }
 
-/* background */
+/* background y uso de mixins*/
 
 @mixin background($url, $repeat, $size, $color, $attach) {
     background-image: url($url);
