@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet"> 
     <link rel="shortcut icon" href="./images/favicon.png">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./sass/main.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -121,8 +123,8 @@
    <!-- information -->
 
    <section class="about">
-    <h2 class="animate__animated animate__zoomIn">About Game of Thrones</h2>
-    <p class="animate__animated animate__slideInRight"> Game of Thrones is an American fantasy drama television series created by <b>David Benioff</b> and <b>D. B. Weiss</b> for HBO. It is an adaptation of <b><em>A Song of Ice and Fire</em></b>, a series of fantasy novels by <b>George R. R. Martin</b>, the first of which is A Game of Thrones. <br> Set on the fictional continents of <em>Westeros and Essos</em>, Game of Thrones has a large ensemble cast and follows several story arcs throughout the course of the show. The first major arc concerns the <b>Iron Throne of the Seven Kingdoms of Westeros</b> through a web of political conflicts among the noble families either vying to claim the throne or fighting for independence from whoever sits on it. A second focuses on the last descendant of the realm's deposed ruling dynasty, who has been exiled to Essos and is plotting to return and reclaim the throne. The third follows the <b>Night's Watch</b>, a military order defending the realm against threats from beyond Westeros's northern border. </p>
+    <h2 data-aos="fade-up" data-aos-anchor-placement="top-center">About Game of Thrones</h2>
+    <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine""> Game of Thrones is an American fantasy drama television series created by <b>David Benioff</b> and <b>D. B. Weiss</b> for HBO. It is an adaptation of <b><em>A Song of Ice and Fire</em></b>, a series of fantasy novels by <b>George R. R. Martin</b>, the first of which is A Game of Thrones. <br> Set on the fictional continents of <em>Westeros and Essos</em>, Game of Thrones has a large ensemble cast and follows several story arcs throughout the course of the show. The first major arc concerns the <b>Iron Throne of the Seven Kingdoms of Westeros</b> through a web of political conflicts among the noble families either vying to claim the throne or fighting for independence from whoever sits on it. A second focuses on the last descendant of the realm's deposed ruling dynasty, who has been exiled to Essos and is plotting to return and reclaim the throne. The third follows the <b>Night's Watch</b>, a military order defending the realm against threats from beyond Westeros's northern border. </p>
   </section>
 
   <!-- cards -->
@@ -130,7 +132,7 @@
   <section class="card-group">
     <div class="row row-cols-1 row-cols-md-4 g-4">
       <div class="col">
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-offset="500" data-aos-duration="500">
           <img src="./images/galeria_img.png" class="card-img-top" alt="Image Card GoT Gallery">
           <div class="card-body">
             <h5 class="card-title">Galery</h5>
@@ -142,7 +144,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-offset="500" data-aos-duration="500">
           <img src="./images/casas_img.png" class="card-img-top" alt="Image Card GoT Houses">
           <div class="card-body">
             <h5 class="card-title">Houses</h5>
@@ -154,7 +156,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-offset="500" data-aos-duration="500">
           <img src="./images/mercaderia_img.png" class="card-img-top" alt="Image Card Got Merch">
           <div class="card-body">
             <h5 class="card-title">Merch</h5>
@@ -166,7 +168,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-offset="500" data-aos-duration="500">
           <img src="./images/libros_img.png" class="card-img-top" alt="Image Card GoT Books">
           <div class="card-body">
             <h5 class="card-title">Books</h5>
@@ -215,6 +217,11 @@
 
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <!-- JS AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
+  </script>
 
 </body>
 
