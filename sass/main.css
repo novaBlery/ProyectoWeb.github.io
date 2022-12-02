@@ -51,22 +51,17 @@
   .main_title h1 {
     font-size: 10rem;
   }
-  .navbar {
-    font-family: "Cinzel", serif;
-    color: whitesmoke;
-  }
   .navbar .offcanvas-title {
     font-size: 50px;
-    font-weight: bold;
   }
-  .navbar .nav_item {
+  .navbar .nav-item {
     font-size: 30px;
   }
-  .navbar .nav_item .dropdown-menu {
+  .navbar .nav-item .dropdown-menu {
     font-size: 20px;
   }
   .navbar .btn {
-    font-size: 15px;
+    font-size: 25px;
   }
   .galery_style img {
     height: 1000px;
@@ -119,7 +114,7 @@
   .main_title h1 {
     font-size: 5rem;
   }
-  .navbar .offcanvas-titlec {
+  .navbar .offcanvas-title {
     font-size: 30px;
   }
   .navbar .nav-item {
@@ -129,7 +124,7 @@
     font-size: 10px;
   }
   .navbar .btn {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 /* cards */
@@ -209,4 +204,18 @@
   background-size: cover;
   background-color: black;
   background-attachment: fixed;
+}
+
+/* navbar */
+.navbar .offcanvas-title {
+  font-family: "Cinzel", serif;
+  color: whitesmoke;
+  font-weight: bold;
+}
+.navbar .nav-item {
+  font-family: "Cinzel", serif;
+  color: whitesmoke;
+}
+.navbar .btn {
+  font-family: "Cinzel", serif;
 }/*# sourceMappingURL=main.css.map */

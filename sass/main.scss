@@ -77,10 +77,9 @@ $max_width_or_height: 100%;
     .navbar {
         .offcanvas-title {
             font-size: 50px;
-            font-weight: bold;
         }
 
-        .nav_item {
+        .nav-item {
             font-size: 30px;
 
             .dropdown-menu {
@@ -89,13 +88,9 @@ $max_width_or_height: 100%;
         }
 
         .btn {
-            font-size: 15px;
+            font-size: 25px;
         }
-
-        font-family: $font_type_default;
-        color: $color_default;
     }
-    
     
     .galery_style {
         img {
@@ -165,22 +160,29 @@ $max_width_or_height: 100%;
     }
     
     .navbar {
-        .offcanvas-titlec {
+        .offcanvas-title {
             font-size: 30px;
         }
-
+    }
+    
+    .navbar {
         .nav-item {
             font-size: 15px;
-
+        }
+    }
+    
+    .navbar {
+        .nav-item {
             .dropdown-menu {
                 font-size: 10px;
             }
-        }
-
+        } 
+    }
+    
+    .navbar {
         .btn {
-            font-size: 8px;
+            font-size: 10px;
         }
-        
     }
 
 }
@@ -276,4 +278,25 @@ $max_width_or_height: 100%;
     background-color: black;
     background-attachment: fixed;
 }
+
+/* navbar */
+
+.navbar {
+    .offcanvas-title {
+        font-family: $font_type_default;
+        color: $color_default;
+        font-weight: bold;
+    }
+
+    .nav-item {
+        font-family: $font_type_default;
+        color: $color_default;
+    }
+
+    .btn {
+        font-family: $font_type_default;
+    }
+}
+
+
 
