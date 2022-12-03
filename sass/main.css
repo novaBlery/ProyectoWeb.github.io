@@ -8,14 +8,14 @@
   }
   .about h2 {
     font-family: "Cinzel", serif;
-    font-size: 450%;
+    font-size: 250%;
     font-weight: bolder;
     color: whitesmoke;
     padding-bottom: 20px;
   }
   .about p {
     font-family: "Cormorant", serif;
-    font-size: 250%;
+    font-size: 150%;
     font-weight: 450;
     color: whitesmoke;
   }
@@ -31,15 +31,15 @@
   }
   .card-group .card-title {
     font-family: "Cinzel", serif;
-    font-size: 250%;
+    font-size: 100%;
     font-weight: bold;
   }
   .card-group .card-text {
     font-family: "Cormorant", serif;
-    font-size: 250%;
+    font-size: 100%;
   }
   .social_media {
-    padding-top: 300px;
+    padding-top: 200px;
     padding-bottom: 100px;
     text-align: center;
   }
@@ -95,7 +95,7 @@
   .carousel-item {
     padding-top: 60px;
     height: 15vh;
-    min-height: 300px;
+    /* min-height: 300px; */
     width: auto;
     margin: auto;
   }
@@ -144,7 +144,7 @@
 }
 /* cards */
 .card-group {
-  padding-top: 200px;
+  padding-top: 80px;
   /*     padding-bottom: 300px; */
   padding-left: 50px;
   padding-right: 50px;
