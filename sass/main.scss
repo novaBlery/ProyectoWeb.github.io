@@ -1,194 +1,191 @@
-/* mapas para estilos de fuente*/
-
-$font_style: (
-    $font_type_default: 'Cinzel', serif,
-    $font_type_alter: 'Cormorant', serif,
-    $color_default: whitesmoke,
-    $font_size_big: 250%,
-    $font_weight_max: bolder
-);
-
 /* variables */
 
 $max_width_or_height: 100%;
-$view: desktop;
 
-@if $vista == desktop {
-
-    /* media query para PC */
-    @media screen and (min-width: 601px) {
+/* media query para PC */
+@media screen and (min-width: 601px) {
         
-        .about {
-            h2 {
-                font-family: map-get($map: font_style, $key: font_type_default);
-                font-size: 450%;
-                font-weight: map-get($map: font_style, $key: $font_weight_max);
-                color: map-get($map: font_style, $key: $color_default);
-                padding-bottom: 20px;
-            }
-
-            p {
-                font-family: map-get($map: font_stlye, $key: $font_type_alter);
-                font-size: map-get($map: font_type, $key: $font_size_big);
-                font-weight: 450;
-                color: map-get($map: font_style, $key: $color_default);
-            }
-
-            padding-left: 50px;
-            padding-right: 50px;
-            padding-top: 100px
+    .about {
+        h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 450%;
+            font-weight: bolder;
+            color: whitesmoke;
+            padding-bottom: 20px;
         }
-
-        .carousel-item {
-            height: 95vh;
-            min-height: 1000px;
-            width: auto;
-            margin: auto;
-
-            img {
-                width: $max_width_or_height;
-                height: auto;
-            }
-        }
-
-        .card-group {
-            .card-title {
-                font-family: map-get($map: font_style, $key: $font_type_default);
-                font-size: map-get($map: font_style, $key: $font_size_big);
-                font-weight: bold;
-            }
-
-            .card-text {
-                font-family: map-get($map: font_stlye, $key: $font_type_alter);
-                font-size: map-get($map: font_style, $key: $font_size_big);
-            }
-        }
-
-        .social_media {
-            img {
-                width: 50%;
-                padding-left: 60px;
-                padding-left: 60px;
-            }
-
-            padding-top: 300px;
-            padding-bottom: 100px;
-            text-align: center;
-        }
-
-        .main_title {
-            h1 {
-                font-size: 10rem;
-            }
-        }
-
-        .navbar {
-            .offcanvas-title {
-                font-size: 50px;
-            }
-
-            .nav-item {
-                font-size: 30px;
-
-                .dropdown-menu {
-                    font-size: 20px;
-                }
-            }
-
-            .btn {
-                font-size: 25px;
-            }
-        }
-        
-        .galery_style {
-            img {
-                height: 1000px;
-                width: 1000px;
-                object-fit: cover;
-            }
-        
-        }   
-    }
-} @else {
-
-    /* media query para mobile */
-    @media screen and (max-width: 600px) {
-
-        
-        .about {
-            h2 {
-                font-family: map-get($map: font_style, $key: $font_type_default);;
-                font-size: map-get($map: font_style, $key: $font_size_big);
-                font-weight: map-get($map: font_style, $key: $font_weight_max);
-                color: map-get($map: font_style, $key: $color_default);
-                padding-bottom: 20px;
-            }
 
         p {
-            font-family: map-get($map: font_style, $key: $font_type_default);
-            font-size: 115%;
-            color: map-get($map: font_style, $key: $color_default);
+            font-family: 'Cormorant', serif;
+            font-size: 250%;
+            font-weight: 450;
+            color: whitesmoke;
         }
 
         padding-left: 50px;
         padding-right: 50px;
         padding-top: 100px
+    }
+
+    .carousel-item {
+        height: 95vh;
+        min-height: 1000px;
+        width: auto;
+        margin: auto;
+
+        img {
+            width: $max_width_or_height;
+            height: auto;
+        }
+    }
+
+    .card-group {
+        .card-title {
+            font-family: 'Cinzel', serif;
+            font-size: 250%;
+            font-weight: bold;
         }
 
-        .carousel-item {
-            padding-top: 60px;
-            height: 15vh;
-            min-height: 300px;
-            width: auto;
-            margin: auto;
+        .card-text {
+            font-family: 'Cormorant', serif;
+            font-size: 250%;
+        }
+    }
 
-            img {
-                width: $max_width_or_height;
-                height: auto;
+    .social_media {
+        img {
+            width: 50%;
+            padding-left: 60px;
+            padding-left: 60px;
+        }
+
+        padding-top: 300px;
+        padding-bottom: 100px;
+        text-align: center;
+    }
+
+    .main_title {
+        h1 {
+            font-size: 10rem;
+        }
+    }
+
+    .navbar {
+        .offcanvas-title {
+            font-size: 50px;
+        }
+
+        .nav-item {
+            font-size: 30px;
+
+            .dropdown-menu {
+                font-size: 20px;
             }
         }
 
-        .social_media {
-            img {
-                width: $max_width_or_height;
-                padding-left: 10px;
-                padding-right: 10px;
-                padding-bottom: 20px;
-            }
-
-            padding-top: 50px;
-            padding-bottom: 100px;
-            text-align: center;
+        .btn {
+            font-size: 25px;
         }
-
-        .main_title {
-            h1 {
-                font-size: 5rem;
-            }
+    }
+    
+    .galery_style {
+        img {
+            height: 1000px;
+            width: 1000px;
+            object-fit: cover;
         }
+    
+    }   
+}
+
+/* media query para mobile */
+@media screen and (max-width: 600px) {
+
         
-        .navbar {
-            .offcanvas-title {
-                font-size: 30px;
-            }
+    .about {
+        h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 250%;
+            font-weight: bolder;
+            color: whitesmoke;
+            padding-bottom: 20px;
+        }
 
-            .nav-item {
-                font-size: 15px;
+    p {
+        font-family: 'Cinzel', serif;
+        font-size: 115%;
+        color: whitesmoke;
+    }
 
-                .dropdown-menu {
-                    font-size: 10px;
-                }
-            }
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 100px
+    }
 
-            .btn {
+    .carousel-item {
+        padding-top: 60px;
+        height: 15vh;
+        min-height: 300px;
+        width: auto;
+        margin: auto;
+
+        img {
+            width: $max_width_or_height;
+            height: auto;
+        }
+    }
+
+    .card-group {
+        .card-title {
+            font-family: 'Cinzel', serif;
+            font-size: 100%;
+            font-weight: bold;
+        }
+
+        .card-text {
+            font-family: 'Cormorant', serif;
+            font-size: 100%;
+        }
+    }
+
+    .social_media {
+        img {
+            width: $max_width_or_height;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 20px;
+        }
+
+        padding-top: 50px;
+        padding-bottom: 100px;
+        text-align: center;
+    }
+
+    .main_title {
+        h1 {
+            font-size: 5rem;
+        }
+    }
+    
+    .navbar {
+        .offcanvas-title {
+            font-size: 30px;
+        }
+
+        .nav-item {
+            font-size: 15px;
+
+            .dropdown-menu {
                 font-size: 10px;
             }
         }
-        
 
+        .btn {
+            font-size: 10px;
+        }
     }
-}
+    
 
+}
 
 /* cards */
 
@@ -201,7 +198,7 @@ $view: desktop;
     margin: auto;
 
     btn {
-        font-family: map-get($map: font_style, $key: $font_type_alter);
+        font-family: 'Cinzel', serif;
         font-size: x-large;
         font-weight: bold;
     }
@@ -233,11 +230,11 @@ $view: desktop;
 /* titulo principal */
 
 .main_title {
-    font-family: map-get($map: font_style, $key: $font_type_default);
+    font-family: 'Cinzel', serif;
     font-weight: bold;
     text-align: center;
     text-shadow: black -1px 1px, black -2px 2px, black -3px 3px, black -4px 4px, black -5px 5px;
-    color: $color_default;
+    color: whitesmoke;
     padding-top: 200px;
 }
 
@@ -277,21 +274,18 @@ $view: desktop;
 
 .navbar {
     .offcanvas-title {
-        font-family: map-get($map: font_style, $key: $font_type_default);
-        color: map-get($map: font_style, $key: $color_default);
+        font-family: 'Cinzel', serif;
+        color: whitesmoke;
         font-weight: bold;
     }
 
     .nav-item {
-        font-family: map-get($map: font_style, $key: $font_type_default);
-        color: map-get($map: font_style, $key: $color_default);
+        font-family: 'Cinzel', serif;
+        color: whitesmoke;
     }
 
     .btn {
-        font-family: map-get($map: font_style, $key: $font_type_default);
+        font-family: 'Cinzel', serif;
     }
 
 }
-
-
-

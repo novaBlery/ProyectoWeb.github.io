@@ -100,6 +100,15 @@
     width: 100%;
     height: auto;
   }
+  .card-group .card-title {
+    font-family: "Cinzel", serif;
+    font-size: 100%;
+    font-weight: bold;
+  }
+  .card-group .card-text {
+    font-family: "Cormorant", serif;
+    font-size: 100%;
+  }
   .social_media {
     padding-top: 50px;
     padding-bottom: 100px;
@@ -136,7 +145,7 @@
   margin: auto;
 }
 .card-group btn {
-  font-family: "Cormorant", serif;
+  font-family: "Cinzel", serif;
   font-size: x-large;
   font-weight: bold;
 }
@@ -165,9 +174,9 @@
   padding-top: 200px;
 }
 
-/* background */
+/* background y uso de mixins*/
 .homeBackground {
-  background-image: url(../images/premium-fondo-degradado-negro-simple_552255-583.webp);
+  background-image: url("../images/premium-fondo-degradado-negro-simple_552255-583.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: black;
@@ -175,7 +184,7 @@
 }
 
 .galeryBackground {
-  background-image: url(../images/black-stone-texture-dark-slate-background-top-view_88281-1206.webp);
+  background-image: url("../images/black-stone-texture-dark-slate-background-top-view_88281-1206.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: black;
@@ -183,7 +192,7 @@
 }
 
 .houseBackground {
-  background-image: url(../images/122983.jpg);
+  background-image: url("../images/122983.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: black;
@@ -191,7 +200,7 @@
 }
 
 .merchBackground {
-  background-image: url(../images/Game_of_Thrones_Closeup_Swords_Throne_582493_1280x854.jpg);
+  background-image: url("../images/Game_of_Thrones_Closeup_Swords_Throne_582493_1280x854.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: black;
@@ -199,7 +208,7 @@
 }
 
 .booksBackground {
-  background-image: url(../images/Game-of-Thrones-emblema.jpg);
+  background-image: url("../images/Game-of-Thrones-emblema.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: black;
