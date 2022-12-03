@@ -53,16 +53,16 @@
     font-size: 10rem;
   }
   .navbar .offcanvas-title {
-    font-size: 50px;
+    font-size: 35px;
   }
   .navbar .nav-item {
-    font-size: 30px;
-  }
-  .navbar .nav-item .dropdown-menu {
     font-size: 20px;
   }
+  .navbar .nav-item .dropdown-menu {
+    font-size: 10px;
+  }
   .navbar .btn {
-    font-size: 25px;
+    font-size: 20px;
   }
   .navbar .navbar-brand img {
     width: 20%;
@@ -96,7 +96,7 @@
   .carousel-item {
     padding-top: 60px;
     height: 15vh;
-    /* min-height: 300px; */
+    min-height: 300px;
     width: auto;
     margin: auto;
   }

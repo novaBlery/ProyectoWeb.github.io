@@ -72,19 +72,19 @@ $max_width_or_height: 100%;
 
     .navbar {
         .offcanvas-title {
-            font-size: 50px;
+            font-size: 35px;
         }
 
         .nav-item {
-            font-size: 30px;
+            font-size: 20px;
 
             .dropdown-menu {
-                font-size: 20px;
+                font-size: 10px;
             }
         }
 
         .btn {
-            font-size: 25px;
+            font-size: 20px;
         }
 
         .navbar-brand img {
@@ -129,7 +129,7 @@ $max_width_or_height: 100%;
     .carousel-item {
         padding-top: 60px;
         height: 15vh;
-        /* min-height: 300px; */
+        min-height: 300px;
         width: auto;
         margin: auto;
 
