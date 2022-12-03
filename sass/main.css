@@ -67,8 +67,8 @@
     width: 20%;
   }
   .galery_style img {
-    height: 1000px;
-    width: 1000px;
+    height: 500px;
+    width: 500px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -162,7 +162,7 @@
 
 /* galery */
 .galery_style {
-  padding-top: 200px;
+  padding-top: 90px;
   padding-left: 10px;
   padding-right: 10px;
 }
