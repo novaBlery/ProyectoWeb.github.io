@@ -91,7 +91,7 @@ $max_width_or_height: 100%;
         }
     }
     
-    .galery_style {
+    .gallery_style {
         img {
             height: 500px;
             width: 500px;
@@ -220,9 +220,9 @@ $max_width_or_height: 100%;
     
 }
 
-/* galery */
+/* gallery */
 
-.galery_style {
+.gallery_style {
     padding-top: 90px;
     padding-left: 10px;
     padding-right: 10px;
@@ -260,7 +260,7 @@ $max_width_or_height: 100%;
     @include background('../images/premium-fondo-degradado-negro-simple_552255-583.webp', no-repeat, cover, black, fixed)
 }
 
-.galeryBackground{
+.galleryBackground{
     @include background('../images/black-stone-texture-dark-slate-background-top-view_88281-1206.webp', no-repeat, cover, black, fixed)
 }
 
@@ -303,3 +303,5 @@ $max_width_or_height: 100%;
     }
 
 }
+
+

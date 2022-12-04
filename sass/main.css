@@ -65,7 +65,7 @@
     width: 60px;
     height: 60px;
   }
-  .galery_style img {
+  .gallery_style img {
     height: 500px;
     width: 500px;
     -o-object-fit: cover;
@@ -157,13 +157,13 @@
   box-shadow: 30px -10px grey;
 }
 
-/* galery */
-.galery_style {
+/* gallery */
+.gallery_style {
   padding-top: 90px;
   padding-left: 10px;
   padding-right: 10px;
 }
-.galery_style img:hover {
+.gallery_style img:hover {
   transform: translateY(-20px);
 }
 
@@ -186,7 +186,7 @@
   background-attachment: fixed;
 }
 
-.galeryBackground {
+.galleryBackground {
   background-image: url("../images/black-stone-texture-dark-slate-background-top-view_88281-1206.webp");
   background-repeat: no-repeat;
   background-size: cover;
