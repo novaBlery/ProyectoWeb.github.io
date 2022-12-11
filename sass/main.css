@@ -264,4 +264,9 @@
 }
 .foot .container .zoom_items:hover {
   transform: scale(1.5);
+}
+
+/* boton activo */
+.btn:active {
+  box-shadow: 0 0 0 2px white, 0 0 0 4px rgb(76, 76, 102);
 }/*# sourceMappingURL=main.css.map */

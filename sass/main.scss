@@ -359,4 +359,10 @@ $max_width_or_height: 100%;
     }
 }
 
+/* boton activo */
+
+.btn:active {
+    box-shadow: 0 0 0 2px white, 0 0 0 4px rgb(76, 76, 102);
+}
+
 
