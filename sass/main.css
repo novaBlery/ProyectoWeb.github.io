@@ -258,4 +258,10 @@
 .foot .container .row {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+.foot .container .zoom_items {
+  transition: 0.5s all ease-in-out;
+}
+.foot .container .zoom_items:hover {
+  transform: scale(1.5);
 }/*# sourceMappingURL=main.css.map */
