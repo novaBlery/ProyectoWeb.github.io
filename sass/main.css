@@ -275,7 +275,8 @@
   text-decoration: none;
 }
 .foot .container .copyright a p {
-  color: white;
+  color: darkgray;
+  opacity: 30%;
   font-family: sans-serif;
   padding-top: 10px;
 }
