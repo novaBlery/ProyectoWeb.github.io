@@ -103,6 +103,10 @@ $max_width_or_height: 100%;
             p {
                 font-size: 15px;
             }
+
+            .copyright {
+                font-size: large;
+            }
         }
     }
 }
@@ -206,6 +210,10 @@ $max_width_or_height: 100%;
 
             p {
                 font-size: 10px;
+            }
+
+            .copyright {
+                font-size: medium;
             }
         }
     }
@@ -353,6 +361,18 @@ $max_width_or_height: 100%;
 
             &:hover {
                 transform: scale(1.5);
+            }
+        }
+
+        .copyright {
+            a {
+                p {
+                    color: white;
+                    font-family: sans-serif;
+                    padding-top: 10px;
+                }
+                
+                text-decoration:none;
             }
         }
 

@@ -70,6 +70,9 @@
   .foot .container p {
     font-size: 15px;
   }
+  .foot .container .copyright {
+    font-size: large;
+  }
 }
 /* media query para mobile */
 @media screen and (max-width: 600px) {
@@ -141,6 +144,9 @@
   }
   .foot .container p {
     font-size: 10px;
+  }
+  .foot .container .copyright {
+    font-size: medium;
   }
 }
 /* cards */
@@ -264,6 +270,14 @@
 }
 .foot .container .zoom_items:hover {
   transform: scale(1.5);
+}
+.foot .container .copyright a {
+  text-decoration: none;
+}
+.foot .container .copyright a p {
+  color: white;
+  font-family: sans-serif;
+  padding-top: 10px;
 }
 
 /* boton activo */
