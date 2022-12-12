@@ -1,0 +1,110 @@
+/* media query para PC */
+
+@media screen and (min-width: 601px) {
+        
+    .about {
+        h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 250%;
+            font-weight: bolder;
+            color: whitesmoke;
+            padding-bottom: 20px;
+        }
+
+        p {
+            font-family: 'Cormorant', serif;
+            font-size: 150%;
+            font-weight: 450;
+            color: whitesmoke;
+        }
+
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 100px
+    }
+
+    .carousel-item {
+        /* height: 95vh;
+        min-height: 1000px; */
+        height: auto;
+        width: auto;
+        margin: auto;
+
+        img {
+            width: $max_width_or_height;
+            height: auto;
+        }
+    }
+
+    .card-group {
+        .card-title {
+            font-family: 'Cinzel', serif;
+            font-size: 100%;
+            font-weight: bold;
+        }
+
+        .card-text {
+            font-family: 'Cormorant', serif;
+            font-size: 100%;
+        }
+    }
+
+    .main_title {
+        h1 {
+            font-size: 6rem;
+            padding-top: 40px;
+        }
+    }
+
+    .navbar {
+        .offcanvas-title {
+            font-size: 35px;
+        }
+
+        .nav-item {
+            font-size: 20px;
+        }
+
+        .btn {
+            font-size: 20px;
+        }
+
+        .navbar-brand {
+            img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+    
+    .gallery_style {
+        img {
+            height: 500px;
+            width: 500px;
+            object-fit: cover;
+        }
+    
+    }
+    
+    .foot {
+        .container {
+            figure {
+                img {
+                    width: 50%;
+                }
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+            .copyright {
+                font-size: large;
+            }
+        }
+    }
+}

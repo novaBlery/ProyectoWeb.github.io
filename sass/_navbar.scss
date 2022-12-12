@@ -1,0 +1,25 @@
+/* navbar */
+
+.navbar {
+
+    .nav-item {
+        .nav-link {
+            font-family: 'Cinzel', serif;
+            color: whitesmoke;
+        }
+
+        &:hover {
+            transform: translateY(-15px);
+            font-weight: bolder;
+        }
+    }
+
+    .btn {
+        font-family: 'Cinzel', serif;
+    }
+
+    .form-control {
+        font-family: 'Cormorant', serif;
+    }
+
+}

@@ -1,0 +1,31 @@
+/* background y uso de mixins*/
+
+@mixin background($url, $repeat, $size, $color, $attach) {
+    background-image: url($url);
+    background-repeat: $repeat;
+    background-size: $size;
+    background-color: $color;
+    background-attachment: $attach;
+}
+
+.homeBackground{
+    @include background('../images/premium-fondo-degradado-negro-simple_552255-583.webp', no-repeat, cover, black, fixed)
+}
+
+.galleryBackground{
+    @include background('../images/black-stone-texture-dark-slate-background-top-view_88281-1206.webp', no-repeat, cover, black, fixed)
+}
+
+.houseBackground{
+    @include background('../images/122983.jpg', no-repeat, cover, black, fixed)
+
+}
+
+.merchBackground {
+    @include background('../images/Game_of_Thrones_Closeup_Swords_Throne_582493_1280x854.jpg', no-repeat, cover, black, fixed)
+}
+
+.booksBackground {
+    @include background('../images/Game-of-Thrones-emblema.jpg', no-repeat, cover, black, fixed)
+
+}

@@ -1,0 +1,14 @@
+/* gallery */
+
+.gallery_style {
+    padding-top: 90px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    img {
+        &:hover {
+            transform: translateY(-20px);   
+        }
+    }
+
+}
